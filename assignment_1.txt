@@ -1,0 +1,38 @@
+1./ 
+a/
++ It is used to achieve total abstraction.
+Since java does not support multiple inheritance in case of class, but by using interface it can achieve multiple inheritance.
+It is also used to achieve loose coupling.
+
++ To declare an interface, use interface keyword. It is used to provide total abstraction. 
+That means all the methods in an interface are declared with an empty body and are public and all fields are public, static and final by default. 
+A class that implement interface must implement all the methods declared in the interface. To implement interface use implements keyword.
+
+2./
+
+a/ Is it necessary or unnecessary? 
+
+=> In my opinion, it's unnecessary because absctract class Currencty can do the same. We just need to declare 2 absctract methods there and all sub-classes 
+extending Currencty have to implement them.
+	
+b/ When/How is it necessary/unnecessary?
+
+=> It's necessary when there are many classes like Currencty and they have to use 2 methods in Trading Currency Interface. In that case, we don't need to declare 
+2 methods for every class, just implement Trading Currency Interface.
+
+=> It's unnecessary when there is one class that needs to use 2 methods in Trading Currency Interface, and this class is absctract like Currencty. 
+
+3./Programming languages typically comes with frameworks that implement arithmetic operations for decimal values differently.  java.math.
+ is Java platform's implementation. System.Decimal is .NET Framework's implementation. BigDecimal
+
+a/ Share your opinions on why such arithmetic operations are implemented by individual programming language frameworks differently.
+
+=> Because every platform has differences in storing data into memory. For instance, Decimal variable in Java is 32 bit but .NET is 16 bit.
+So, arithmetic operations are implemented by individual programming language frameworks differently.
+
+
+b/ Share your opinion why we should or shouldn't use implementations provided by individual programming languages.
+
+=> We should use implementations provided by individual programming languages to ensure that everything works well. 
+As I told before, there are differences between platforms. If we use same library of arithmetic operations for Java and .NET, it can not work 
+because Decimal variables of them are different.
